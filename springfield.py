@@ -18,8 +18,8 @@ NOTE: In order to scrape the list, the JS of the page has to load first, otherwi
 This is where Selenium comes into play
 """
 # This is a list of the movie titles and years
-movie_titles_list = outer_box.findall('a', {'class': "script-list-item"})
-# print(movie_titles_list.prettify()) #without Selenium, returns nonetype
+movie_titles_list = outer_box.find_all('a', {'class': "script-list-item"})
+print(movie_titles_list) #without Selenium, returns nonetype
 
 # for movie in movie_titles_list:
     # name = movie.text
