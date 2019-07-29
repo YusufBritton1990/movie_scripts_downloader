@@ -5,7 +5,7 @@ import requests
 res = requests.get("https://www.springfieldspringfield.co.uk/movie_scripts.php")
 
 # using soup to parse information from website as a XML
-soup = BeautifulSoup(res.text, "html.parser") #Type is a soup
+soup = BeautifulSoup(res.text, "lxml") #Type is a soup
 
 # This is a list that contains all the information in the soup,
 # which contains the movies titles and years
@@ -13,15 +13,14 @@ outer_box = soup.find('div', {'class': "main-content-left"})
 # print(outer_box.prettify()) # type is a element.tag
 
 """
-NOTE: In order to scrape the list, the JS of the page has to load first, otherwise, movie_titles_list will return a nonetype
-
-This is where Selenium comes into play
+Selenium
 """
 # This is a list of the movie titles and years
 movie_titles_list = outer_box.find_all('a', {'class': "script-list-item"})
-print(movie_titles_list) #without Selenium, returns nonetype
+# print(movie_titles_list)
+# print(type(movie_titles_list))
 
-# for movie in movie_titles_list:
-    # name = movie.text
-    # name = soup.find('div', {'class': "main-content-left"})
-    # print(name)
+for movie in movie_titles_list:
+    full_name = movie.text
+    name, year = full_name.split("(")[0], full_name.split("(")[1][:-1]
+    print(name)
