@@ -35,4 +35,4 @@ for movie in movie_titles_list:
 
     # using "(" as a delimiter, then taking out ")" in the year
     name, year = full_name.split("(")[0], full_name.split("(")[1][:-1]
-    # print(name)
+    print(name)
