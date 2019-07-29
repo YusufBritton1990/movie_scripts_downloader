@@ -1,16 +1,7 @@
-# Download all scripts from imsdb.com
 
-This repository contains python code to download (and clean) all 
-scripts on the website [http://www.imsdb.com](http://www.imsdb.com).
+Notes below for "download_all_scripts" from j2kun
+https://github.com/j2kun/imsdb_download_all_scripts
 
-## To download
-
-```
-git clone https://github.com/j2kun/imsdb_download_all_scripts
-cd imsdb_download_all_scripts
-virtualenv venv && source venv/bin/activate
-pip install -r requirements.txt
-python download_all_scripts.py
-```
-
-Takes about 15 minutes, downloads about 1,100 scripts.
+Selenium: Build based on ChromeDriver 75.0.3770.140
+https://sites.google.com/a/chromium.org/chromedriver/downloads
+https://sites.google.com/a/chromium.org/chromedriver/getting-started
