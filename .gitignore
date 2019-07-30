@@ -2,4 +2,4 @@ scripts
 scripts.tar.gz
 env
 example.py
-test.py
+debug.log
