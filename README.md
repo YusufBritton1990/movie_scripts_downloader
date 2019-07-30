@@ -1,6 +1,13 @@
 
-This project is to test data scraping on IMSdB and Springfield Springfield
+# Webscarping Movie Scripts
+This project is to test data scraping on IMSDb and Springfield Springfield
 websites.
+
+IMSdB:
+https://www.imsdb.com/all%20scripts/
+
+Springfield Springfield:
+https://www.springfieldspringfield.co.uk/movie_scripts.php
 
 Requests: Using a URL, makes a connection to a website. Gathers data quickly.
 Selenium: Using a URL, makes a connection to a website and can interact with it
