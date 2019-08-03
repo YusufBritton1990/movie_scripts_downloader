@@ -1,5 +1,8 @@
 
 # Webscarping Movie Scripts
+08/03/2019
+Springfield Requests scapes 27,046 movie title and years in ~740 secs (12-13 minutes)
+
 This project is to test data scraping on IMSDb and Springfield Springfield
 websites.
 

@@ -4,3 +4,5 @@ env
 example.py
 debug.log
 error
+dftest.py
+*.csv
